@@ -1,23 +1,16 @@
 <template>
-  <Header />
-  <main>
-    <Home/>
-    <About/>
-    <Education/>
-    <Skills/>
-    <Projects/>
-    <Achievements/>
-    <Contact/>
-  </main>
+  <div class="min-h-screen bg-cream">
+    <TheNavbar />
+    <router-view v-slot="{ Component }">
+      <transition name="page" mode="out-in">
+        <component :is="Component" />
+      </transition>
+    </router-view>
+    <TheFooter />
+  </div>
 </template>
 
 <script setup>
-import Header from './components/Header.vue'
-import Home from './components/Home.vue'
-import About from './components/About.vue'
-import Education from './components/Education.vue'
-import Skills from './components/Skills.vue'
-import Projects from './components/Projects.vue'
-import Achievements from './components/Achievements.vue'
-import Contact from './components/Contact.vue'
+import TheNavbar from '@/components/TheNavbar.vue'
+import TheFooter from '@/components/TheFooter.vue'
 </script>

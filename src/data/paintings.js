@@ -1,0 +1,156 @@
+export const paintings = [
+  {
+    id: 1,
+    title: 'Traditional Portrait I',
+    year: 'Recent Work',
+    medium: 'Oil on Canvas',
+    dimensions: '24 × 36 in',
+    category: 'Portrait',
+    colorsUsed: 'Burnt Sienna, Raw Umber, Yellow Ochre, Titanium White, Ivory Black, Earth Tones',
+    style: 'Traditional Portrait Painting / Realism',
+    description:
+      'A culturally rich portrait capturing traditional Nepalese attire with deep tones, intricate ornaments, and expressive realism. Each brushstroke honours the dignity and cultural heritage of its subject.',
+    image: '/paintings/painting-1.jpg',
+    thumbnail: '/paintings/painting-1.jpg',
+    featured: true,
+    sold: false,
+  },
+  {
+    id: 2,
+    title: 'Traditional Portrait II',
+    year: 'Recent Work',
+    medium: 'Oil on Canvas',
+    dimensions: '18 × 24 in',
+    category: 'Portrait',
+    colorsUsed:
+      'Burnt Sienna, Raw Umber, Yellow Ochre, Titanium White, Ivory Black, Ultramarine Blue, Sap Green, and Earth tones',
+    style: 'Classical Cultural Realism',
+    description:
+      'Rendered in a classic earth-toned palette — Burnt Sienna, Raw Umber, and Yellow Ochre with subtle Ultramarine and Sap Green accents. A study in natural light, warmth, and quiet dignity.',
+    image: '/paintings/painting-2.jpg',
+    thumbnail: '/paintings/painting-2.jpg',
+    featured: false,
+    sold: false,
+  },
+  {
+    id: 3,
+    title: 'Forest Stream Landscape',
+    year: 'Recent Work',
+    medium: 'Oil on Canvas',
+    dimensions: '18 × 24 in',
+    category: 'Landscape',
+    colorsUsed:
+      'Sap Green, Viridian Green, Olive Green, Yellow Ochre, Burnt Umber, Titanium White, Ivory Black, Ultramarine Blue',
+    style: 'Landscape / Nature Painting',
+    description:
+      'A tranquil forest stream flowing through verdant wilderness. Layered glazes of Sap Green, Viridian, and Olive Green capture the dappled light and movement of water over river stones.',
+    image: '/paintings/painting-3.jpg',
+    thumbnail: '/paintings/painting-3.jpg',
+    featured: false,
+    sold: false,
+  },
+  {
+    id: 4,
+    title: 'Gandruk Gurung Village (Nepal)',
+    year: 'Recent Work',
+    medium: 'Oil on Canvas',
+    dimensions: '24 × 36 in',
+    category: 'Landscape',
+    colorsUsed: 'Raw Umber, Yellow Ochre, Terracotta, Cobalt Blue, Sap Green, Titanium White',
+    style: 'Landscape / Heritage Realism',
+    description:
+      'A panoramic landscape of the ancient Gurung village of Ghandruk in the Annapurna region of Nepal. Terraced hillsides, stone masonry homes, and towering mountain mist evoke an enduring cultural harmony with the Himalayas.',
+    image: '/paintings/painting-4.jpg',
+    thumbnail: '/paintings/painting-4.jpg',
+    featured: true,
+    sold: false,
+  },
+  {
+    id: 5,
+    title: 'Smiling Nepalese Woman',
+    year: 'Recent Work',
+    medium: 'Charcoal on Paper',
+    dimensions: '29.7 × 42 cm (A3)',
+    category: 'Portrait',
+    colorsUsed: 'Vine Charcoal, Compressed Charcoal, White Chalk on Archival Paper',
+    style: 'Realistic Portrait / Charcoal Drawing',
+    description:
+      'A realistic charcoal portrait capturing radiant warmth, wisdom, and emotional depth. Through subtle smudging and crisp tonal contrast, the expressive beauty of the subject shines with tender honesty.',
+    image: '/paintings/painting-5.jpg',
+    thumbnail: '/paintings/painting-5.jpg',
+    featured: false,
+    sold: false,
+  },
+  {
+    id: 6,
+    title: 'Actress Miruna Magar (Cultural Dress)',
+    year: 'Recent Work',
+    medium: 'Oil on Canvas',
+    dimensions: '18 × 24 in',
+    category: 'Portrait',
+    colorsUsed: 'Vermillion, Gold Ochre, Ivory Black, Raw Sienna, Flake White, Indigo',
+    style: 'Traditional Portrait Painting / Expressive Realism',
+    description:
+      'A portrait of actress Miruna Magar adorned in traditional Nepalese cultural attire and ethnic jewelry. Layered oil glazes recreate the intricate metallic luster of ornaments and rich textiles with lifelike fidelity.',
+    image: '/paintings/painting-6.jpg',
+    thumbnail: '/paintings/painting-6.jpg',
+    featured: true,
+    sold: false,
+  },
+  {
+    id: 7,
+    title: 'Crested Serpent Eagle',
+    year: 'Recent Work',
+    medium: 'Oil on Canvas',
+    dimensions: '36 × 48 in',
+    category: 'Wildlife',
+    colorsUsed:
+      'Burnt Umber, Yellow Ochre, Naples Yellow, Lamp Black, Titanium White, Cerulean touches',
+    style: 'Realistic Wildlife Art / Layered Oil Detailing',
+    description:
+      'A commanding large-format realistic wildlife painting. Intricate brushwork details individual feather textures, the powerful crest, and the intense, piercing gaze of the eagle perched in atmospheric light.',
+    image: '/paintings/painting-7.jpg',
+    thumbnail: '/paintings/painting-7.jpg',
+    featured: true,
+    sold: false,
+  },
+  {
+    id: 8,
+    title: 'Aamadablam Mountain Journey I (Nepal)',
+    year: 'Recent Work',
+    medium: 'Acrylic on Canvas',
+    dimensions: '24 × 36 in',
+    category: 'Landscape',
+    colorsUsed: "Monochrome Palette, Titanium White, Carbon Black, Payne's Grey, Ultramarine Ash",
+    style: 'Monochrome Landscape / Knife & Impasto Detailing',
+    description:
+      'Ama Dablam — the sacred Himalayan peak known as "Mother\'s Necklace". Executed with palette knife techniques creating tactile rock faces, sharp ridges, and crystalline snow fields under dramatic skies.',
+    image: '/paintings/painting-8.jpg',
+    thumbnail: '/paintings/painting-8.jpg',
+    featured: false,
+    sold: false,
+  },
+  {
+    id: 9,
+    title: 'Aamadablam Mountain Journey II (Nepal)',
+    year: 'Recent Work',
+    medium: 'Oil on Canvas',
+    dimensions: '18 × 24 in',
+    category: 'Landscape',
+    colorsUsed: 'Warm Earth Tones, Cerulean Blue, Burnt Sienna, Titanium White, Raw Umber',
+    style: 'Figurative & Cultural Landscape / Layered Oil',
+    description:
+      'Figurative mountain travelers navigating trails below the towering Himalayan summit. A narrative painting celebrating high-altitude cultural life, stamina, and reverent connection to the sacred mountains.',
+    image: '/paintings/painting-9.jpg',
+    thumbnail: '/paintings/painting-9.jpg',
+    featured: false,
+    sold: false,
+  },
+]
+
+export const categories = ['All', 'Portrait', 'Landscape', 'Wildlife']
+
+export const getFeatured = () => paintings.filter((p) => p.featured)
+export const getByCategory = (cat) =>
+  cat === 'All' ? paintings : paintings.filter((p) => p.category === cat)
+export const getById = (id) => paintings.find((p) => p.id === Number(id))
