@@ -17,14 +17,14 @@
 
     <div class="sticky top-20 z-30 bg-cream/95 backdrop-blur-md border-b border-ink/10 shadow-xs">
       <div
-        class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-3 sm:py-4 flex gap-2.5 sm:gap-3 overflow-x-auto scrollbar-hide"
+        class="max-w-7xl mx-auto px-4 sm:px-6 md:px-12 py-3 sm:py-4 grid grid-cols-2 gap-2.5 sm:flex sm:flex-wrap sm:gap-3"
       >
         <button
           v-for="cat in filterOptions"
           :key="cat.name"
           @click="setCategory(cat.name)"
           :class="[
-            'flex-shrink-0 px-4 sm:px-5 py-2.5 min-h-[44px] text-xs tracking-widest uppercase transition-all duration-300 flex items-center gap-2 cursor-pointer',
+            'w-full sm:w-auto justify-center px-3 sm:px-5 py-2.5 min-h-[44px] text-xs tracking-widest uppercase transition-all duration-300 flex items-center gap-2 cursor-pointer',
             activeCategory === cat.name
               ? 'bg-ink text-cream shadow-sm font-medium'
               : 'border border-ink/20 text-warm-gray hover:border-ink hover:text-ink',

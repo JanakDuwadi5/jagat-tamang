@@ -78,18 +78,21 @@
       </button>
     </nav>
 
+  </header>
+
+  <Teleport to="body">
     <transition name="mobile-menu">
       <div
         v-if="menuOpen"
-        class="md:hidden fixed inset-x-0 top-20 bg-cream/98 backdrop-blur-xl border-b border-ink/15 shadow-2xl px-6 py-8 max-h-[calc(100svh-5rem)] overflow-y-auto"
+        class="md:hidden fixed inset-x-0 top-20 bottom-0 z-[60] bg-cream px-6 py-6 shadow-2xl overflow-hidden"
       >
-        <div class="flex flex-col gap-6">
-          <ul class="flex flex-col gap-5">
+        <div class="max-w-sm mx-auto flex flex-col gap-4">
+          <ul class="flex flex-col gap-2">
             <li v-for="link in navLinks" :key="link.to">
               <router-link
                 :to="link.to"
                 :class="[
-                  'font-serif text-3xl tracking-tight transition-colors block py-1',
+                  'font-serif text-2xl tracking-tight transition-colors block py-1',
                   $route.path === link.to ? 'text-gold' : 'text-ink hover:text-gold',
                 ]"
                 @click="closeMenu"
@@ -99,7 +102,7 @@
             </li>
           </ul>
 
-          <div class="pt-6 border-t border-ink/10 flex flex-col gap-4">
+          <div class="pt-4 border-t border-ink/10 flex flex-col gap-3">
             <router-link
               to="/contact?type=commission"
               class="btn-ink w-full justify-center text-xs py-3.5"
@@ -108,18 +111,10 @@
               Commission Custom Artwork
             </router-link>
           </div>
-
-          <div class="pt-4 text-xs text-warm-gray space-y-1">
-            <p class="font-medium text-ink">Jagat Tamang Fine Art Studio</p>
-            <p>Toronto, Ontario, Canada &middot; Worldwide Delivery</p>
-            <p class="text-[11px] text-warm-gray/70 pt-1">
-              +1 416-834-7097 &middot; tamangjagat509@gmail.com
-            </p>
-          </div>
         </div>
       </div>
     </transition>
-  </header>
+  </Teleport>
 </template>
 
 <script setup>
