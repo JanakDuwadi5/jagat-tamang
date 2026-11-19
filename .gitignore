@@ -14,6 +14,21 @@ dist-ssr
 coverage
 *.local
 
+# Local environment and deployment secrets
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
+.wrangler
+.vercel
+
+# Local certificates and private keys
+*.pem
+*.key
+*.p12
+*.pfx
+
 /cypress/videos/
 /cypress/screenshots/
 
